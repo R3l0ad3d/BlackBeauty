@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#d76b6b">
+    android:gravity="center"
+    android:background="#8e8c8c"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/ivImagePreview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/rvFilterPreview"
-        android:src="@drawable/photo"/>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvFilterPreview"
-        android:layout_width="match_parent"
+    <ImageButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:src="@drawable/gallery_icon_96"
+        android:onClick="galleryClick"/>
 
-    </android.support.v7.widget.RecyclerView>
-</RelativeLayout>
+</LinearLayout>

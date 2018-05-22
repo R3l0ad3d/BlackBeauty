@@ -5,11 +5,13 @@ import android.graphics.Bitmap;
 public class ImagePreviewItem {
     private String name;
     private Bitmap bitmap;
+    private int filterCode;
     private boolean isSelect;
 
-    public ImagePreviewItem(String name, Bitmap bitmap) {
+    public ImagePreviewItem(String name, Bitmap bitmap,int filterCode) {
         this.name = name;
         this.bitmap = bitmap;
+        this.filterCode=filterCode;
         isSelect=false;
     }
 
@@ -35,5 +37,13 @@ public class ImagePreviewItem {
 
     public void setSelect(boolean select) {
         isSelect = select;
+    }
+
+    public int getFilterCode() {
+        return filterCode;
+    }
+
+    public void setFilterCode(int filterCode) {
+        this.filterCode = filterCode;
     }
 }
